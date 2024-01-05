@@ -9,6 +9,7 @@ class myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: HomePage(),
     );
   }
@@ -25,6 +26,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(title: Center(child: Text("DATE PICKER")),backgroundColor: Colors.grey),backgroundColor: Colors.blueGrey,
       body: Center(child: Padding(padding: EdgeInsets.all(30),
         child: TextField(
           controller: datecontroller,
